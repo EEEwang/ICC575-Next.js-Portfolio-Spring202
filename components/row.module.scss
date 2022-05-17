@@ -1,0 +1,19 @@
+@use '../sass/abstracts/mixins';
+
+.row{
+    //background-color: lightpink;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+
+    &.justify-content-space-between{
+        justify-content: space-between;
+    }
+
+    &.justify-content-center{
+        justify-content: center;
+    }
+
+   @include mixins.alignItems();
+}
